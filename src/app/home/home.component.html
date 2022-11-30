@@ -1,0 +1,53 @@
+<div class="container">
+    <h3 class="h3 m-3" style="text-align: center">Interview Task Frontend Development (m/f/d)</h3>
+    <div class="row" style="border-top:solid 1px #999; margin: 0px;">
+
+
+
+
+      <div class="col-md-4 mt-2">
+          <div class="border-end bg-white m-0 p-0" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Sort Area</div>
+            
+              <form class="row m-0 mt-3" [formGroup]="priceFilterForm" (ngSubmit)="filterByPrice()">
+                <div class="col-md-5">
+                  <input type="number" class="form-control" id="min" formControlName="min" placeholder="Min">
+                </div>
+                <div class="col-md-5">
+                  <input type="number" class="form-control" id="max" formControlName="max" placeholder="Max">
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-primary mb-3">Go</button>
+                </div>
+              </form>
+
+          </div>
+      </div>
+
+        <!--
+        <div class="col-md-4" style="background:#ccc">
+            <div class="row m-3" style="background:#999">
+                <div class="col-md-12 col-6">Sorting area</div>
+                <div class="col-md-12 col-6">
+
+                    <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-auto">
+                            <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">n</div>
+                              </div>
+                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-md-7">
+            <app-products></app-products>
+        </div>
+    </div>
+  </div>
+  
